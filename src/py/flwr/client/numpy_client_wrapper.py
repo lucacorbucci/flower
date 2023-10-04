@@ -101,7 +101,7 @@ def _fit(self: Client, ins: FitIns) -> FitRes:
     parameters: NDArrays = parameters_to_ndarrays(ins.parameters)
 
     # Train
-    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+    results = self.numpy_client.fit(parameters, ins.config, ins.average_probabilities)  # type: ignore
     if not (
         len(results) == 3
         and isinstance(results[0], list)

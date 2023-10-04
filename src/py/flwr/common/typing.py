@@ -99,6 +99,7 @@ class FitIns:
 
     parameters: Parameters
     config: Dict[str, Scalar]
+    average_probabilities: dict = None
 
 
 @dataclass
