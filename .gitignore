@@ -12,7 +12,7 @@ node_modules
 
 # Flower Examples
 examples/**/dataset/**
-examples/**/dev/*.sh
+#examples/**/dev/*.sh
 
 # Flower Baselines
 baselines/datasets/leaf

@@ -168,3 +168,4 @@ def _wrap_numpy_client(client: NumPyClient) -> Client:
 
     # Create and return an instance of the newly created class
     return wrapper_class(numpy_client=client)  # type: ignore
+
